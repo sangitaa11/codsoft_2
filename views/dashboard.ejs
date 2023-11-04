@@ -1,0 +1,92 @@
+<%- include('partials/header', { title: 'Dashboard' }) %>
+<body style="background-color:#FCFFE7;">
+<div class="container">
+    <h1>Welcome to Your Dashboard</h1>
+
+    <!-- Flight Bookings Table -->
+    <h2>Flight Bookings</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Departure</th>
+                    <th>Arrive</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Adults</th>
+                    <th>Children</th>
+                    <th>Cabin Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% flights.forEach((flight) => { %>
+                    <tr>
+                        <td><%= flight.departure %></td>
+                        <td><%= flight.arrive %></td>
+                        <td><%= flight.from %></td>
+                        <td><%= flight.to %></td>
+                        <td><%= flight.adults %></td>
+                        <td><%= flight.children %></td>
+                        <td><%= flight.cabinClass %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Hotel Bookings Table -->
+    <h2>Hotel Bookings</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Check-in</th>
+                    <th>Check-out</th>
+                    <th>City</th>
+                    <th>Adults</th>
+                    <th>Children</th>
+                    <th>Room Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% hotels.forEach((hotel) => { %>
+                    <tr>
+                        <td><%= hotel.checkIn %></td>
+                        <td><%= hotel.checkOut %></td>
+                        <td><%= hotel.city %></td>
+                        <td><%= hotel.adults %></td>
+                        <td><%= hotel.children %></td>
+                        <td><%= hotel.roomType %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Car Hire Bookings Table -->
+    <h2>Car Hire Bookings</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Pickup Date</th>
+                    <th>Return Date</th>
+                    <th>Pickup Location</th>
+                    <th>Car Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% carHires.forEach((carHire) => { %>
+                    <tr>
+                        <td><%= carHire.pickupDate %></td>
+                        <td><%= carHire.returnDate %></td>
+                        <td><%= carHire.pickupLocation %></td>
+                        <td><%= carHire.carType %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<%- include('partials/footer') %>

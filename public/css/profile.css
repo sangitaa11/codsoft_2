@@ -1,0 +1,19 @@
+/* profile.css */
+.container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h2 {
+    color: #393f81;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .profile-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

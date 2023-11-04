@@ -1,0 +1,17 @@
+<%- include('partials/header', { user: user, title: 'Home' }) %>
+<body style="background-color: #FCFFE7;">
+<div class="container" style="background-color: #FCFFE7;">
+<div class="px-4 py-5 my-5 text-center">
+  <img class="d-block mx-auto mb-4" src="/assets/tripBliss.jpg" alt="logo" width="200px" height="200px">
+  <h1 class="display-5 fw-bold text-body-emphasis">Welcome to TripBliss</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Embark on unforgettable journeys, discover amazing destinations, and plan your dream vacations with TripBliss. We're here to make your travel dreams a reality.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="Login()">Login</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="Register()">Sign Up</button>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<%- include('partials/footer') %>

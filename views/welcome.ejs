@@ -1,0 +1,33 @@
+<%- include('partials/header', { title: 'Welcome' }) %>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<body style="background-color: #FCFFE7;">
+<main class="container my-4">
+  <div class="welcome-container">
+    <h2 class="welcome-heading">Welcome, <%= user.username %>!</h2>
+    <p class="welcome-text">Adventure is worthwhile</p>
+
+    <div class="options">
+      <a class="btn btn-primary welcome-button" href="#flight" onclick="displayFlightForm()">Flight</a>
+      <a class="btn btn-primary welcome-button" href="#car" onclick="displayCarForm()">Car</a>
+      <a class="btn btn-primary welcome-button" href="#hotel" onclick="displayHotelForm()">Hotel</a>
+    </div>
+
+    <div id="flight">
+      <%- include('flight.ejs', { user: user}) %>
+    </div>
+
+    <div id="car" style="display: none;">
+      <%- include('car.ejs', { user: user }) %>
+    </div>
+
+    <div id="hotel" style="display: none;">
+      <%- include('hotel.ejs', { user: user}) %>
+    </div>
+  </div>
+</main>
+</body>
+<%- include('partials/footer') %>
+<script src="/form.js"></script>
+

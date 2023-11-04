@@ -1,0 +1,20 @@
+<%- include('partials/header', { title: 'Profile' }) %>
+<body style="background-color: #FCFFE7;">
+  <div class="container">
+    <h2 style="color: #393f81; font-size: 24px; margin: 20px 0;">Your Profile</h2>
+    <div style="background-color: #f7f7f7; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+      <p><strong>Username:</strong> <%= user.username %></p>
+      <p><strong>Gender:</strong> <%= user.gender %></p>
+      <p><strong>Phone Number:</strong> <%= user.phone %></p>
+      <p><strong>Age:</strong> <%= user.age %></p>
+      <p><strong>Email:</strong> <%= user.email %></p>
+    </div>
+    
+    <div style="margin-top: 20px; margin-bottom: 20px; padding: 20px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+      <h3 style="color: #393f81; font-size: 20px;">Additional Information</h3>
+      <p>This is where you can add more details about your profile.</p>
+      <p>Feel free to include any other information that you'd like to share with others.</p>
+    </div>
+  </div>
+</body>
+<%- include('partials/footer') %>

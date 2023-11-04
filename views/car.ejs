@@ -1,0 +1,65 @@
+
+<h2>Car Hire</h2>
+<div class="wrapper bg-white">
+  <form action="/book/car" method="post" class="needs-validation" novalidate>
+    <div class="form-group d-flex flex-column align-items-center justify-content-between">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="pickup-date-addon">
+          Pickup Date
+        </span>
+        <input type="date" id="pickup-date" name="pickup-date" class="form-control" required>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="return-date-addon">
+          Return Date
+        </span>
+        <input type="date" id="return-date" name="return-date" class="form-control" required>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="pickup-location-addon">
+          Pickup Location
+        </span>
+        <select id="pickup-location" name="pickup-location" class="form-select" required>
+          <option value="Airport Hyderabad">Airport Hyderabad</option>
+          <option value="Railway Station Hyderabad">Railway Station Hyderabad</option>
+          <option value="Downtown Hyderabad">Downtown Hyderabad</option>
+          <option value="Railway Station Chennai">Railway Station Chennai</option>
+          <option value="Downtown Chennai">Downtown Chennai</option>
+          <option value="Airport Bengaluru">Airport Bengaluru</option>
+          <option value="Railway Station Bengaluru">Railway Station Bengaluru</option>
+          <option value="Downtown Bengaluru">Downtown Bengaluru</option>
+          <option value="Airport Mumbai">Airport Mumbai</option>
+          <option value="Railway Station Mumbai">Railway Station Mumbai</option>
+          <option value="Downtown Mumbai">Downtown Mumbai</option>
+          <option value="Airport Ahmedabad">Airport Ahmedabad</option>
+          <option value="Railway Station Ahmedabad">Railway Station Ahmedabad</option>
+          <option value="Downtown Ahmedabad">Downtown Ahmedabad</option>
+          <option value="Airport Delhi">Airport Delhi</option>
+          <option value="Railway Station Delhi">Railway Station Delhi</option>
+          <option value="Downtown Delhi">Downtown Delhi</option>
+          <option value="Airport Kolkata">Airport Kolkata</option>
+          <option value="Railway Station Kolkata">Railway Station Kolkata</option>
+          <option value="Downtown Kolkata">Downtown Kolkata</option>
+          <option value="Airport Thiruvananthapuram">Airport Thiruvananthapuram</option>
+          <option value="Railway Station Thiruvananthapuram">Railway Station Thiruvananthapuram</option>
+          <option value="Downtown Thiruvananthapuram">Downtown Thiruvananthapuram</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="car-type-addon">
+          Car Type
+        </span>
+        <select id="car-type" name="car-type" class="form-select">
+          <option value="compact">Compact</option>
+          <option value="midsize">Midsize</option>
+          <option value="suv">SUV</option>
+          <option value="luxury">Luxury</option>
+        </select>
+      </div>
+      <div class="btn-group w-100">
+        <button type="submit" class="btn btn-primary w-100 rounded-0 d-flex justify-content-center text-center p-3">Book Car</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script src="form-validation.js"></script>

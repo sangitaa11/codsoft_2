@@ -1,0 +1,73 @@
+
+
+<h2>Hotel Stay</h2>
+<div class="wrapper bg-white">
+  <form action="/book-hotel" method="post" class="needs-validation" novalidate>
+    <div class="form-group d-flex flex-column align-items-center justify-content-between">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="check-in-addon">
+          Check-In Date
+        </span>
+        <input type="date" id="check-in" name="check-in" class="form-control" required>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="check-out-addon">
+          Check-Out Date
+        </span>
+        <input type="date" id="check-out" name="check-out" class="form-control" required>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="city-addon">
+          City
+        </span>
+        <select id="city" name="city" class="form-select" required>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Vishakhapatnam">Vishakhapatnam</option>
+          <!-- Add other city options here -->
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Mysore">Mysore</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Jaipur">Jaipur</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Darjeeling">Darjeeling</option>
+          <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="adults-addon">
+          Adults
+        </span>
+        <input type="number" id="adults" name="adults" class="form-control" required>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="children-addon">
+          Children
+        </span>
+        <input type="number" id="children" name="children" class="form-control" required>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="room-type-addon">
+          Room Type
+        </span>
+        <select id="room-type" name="room-type" class="form-select">
+          <option value="single">Single</option>
+          <option value="double">Double</option>
+          <option value="suite">Suite</option>
+          <option value="standard">Standard</option>
+          <option value="deluxe">Deluxe</option>
+        </select>
+      </div>
+      <div class="btn-group w-100">
+        <button type="submit" class="btn btn-primary w-100 rounded-0 d-flex justify-content-center text-center p-3">Book Hotel</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<script src="form-validation.js"></script>

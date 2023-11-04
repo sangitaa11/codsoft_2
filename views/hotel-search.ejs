@@ -1,0 +1,31 @@
+<%- include('partials/header', { title: 'hotel-search' }) %>
+<body style="background-color: #FCFFE7;">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card my-5">
+        <div class="card-body p-4">
+          <h5 class="card-title text-center mb-4">Hotel Search</h5>
+          <form action="/search/hotel" method="post">
+            <div class="mb-3">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" name="city" required>
+            </div>
+            <div class="mb-3">
+              <label for="room-type" class="form-label">Type of Room</label>
+              <select id="room-type" name="room-type" class="form-select">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+              </select>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-primary" type="submit">Search Hotels</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer') %>
