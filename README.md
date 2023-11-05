@@ -9,9 +9,7 @@ TripBliss is a web application for booking flights, hotels, and car rentals. Thi
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Project Video](#Projectvideo)
 
 ## Features
 
@@ -82,9 +80,9 @@ This project relies on several dependencies, including:
 
 ## Project Video
 
-[Watch the video](https://drive.google.com/file/d/1oO9IMK3b7qCo8txR1YANw0bEnTugnzTX/view?usp=drive_link)
+[Watch the video](https://drive.google.com/file/d/1oO9IMK3b7qCo8txR1YANw0bEnTugnzTX/preview?usp=drive_link)
 
-<iframe src="https://drive.google.com/file/d/1oO9IMK3b7qCo8txR1YANw0bEnTugnzTX/view?usp=drive_link" width="640" height="480"></iframe>
+<iframe src="https://drive.google.com/file/d/1oO9IMK3b7qCo8txR1YANw0bEnTugnzTX/preview?usp=drive_link" width="640" height="480"></iframe>
 
 
 
