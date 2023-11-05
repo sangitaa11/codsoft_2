@@ -82,7 +82,6 @@ This project relies on several dependencies, including:
 
 [Watch the video](https://drive.google.com/file/d/1oO9IMK3b7qCo8txR1YANw0bEnTugnzTX/preview?usp=drive_link)
 
-<iframe src="https://drive.google.com/file/d/1oO9IMK3b7qCo8txR1YANw0bEnTugnzTX/preview?usp=drive_link" width="640" height="480"></iframe>
 
 
 
